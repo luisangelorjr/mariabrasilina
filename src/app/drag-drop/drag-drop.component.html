@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>To do</h2>
+  <h2>A FAZER</h2>
 
   <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo"
       [cdkDropListConnectedTo]="[doingList, doneList]" class="list" (cdkDropListDropped)="drop($event)">
@@ -8,7 +8,7 @@
 </div>
 
 <div class="container">
-  <h2>Doing</h2>
+  <h2>FAZENDO</h2>
 
   <div cdkDropList #doingList="cdkDropList" [cdkDropListData]="doing"
       [cdkDropListConnectedTo]="[doneList, todoList]" class="list" (cdkDropListDropped)="drop($event)">
@@ -17,7 +17,7 @@
 </div>
 
 <div class="container">
-  <h2>Done</h2>
+  <h2>FEITO</h2>
 
   <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done"
       [cdkDropListConnectedTo]="[todoList, doingList]" class="list" (cdkDropListDropped)="drop($event)">

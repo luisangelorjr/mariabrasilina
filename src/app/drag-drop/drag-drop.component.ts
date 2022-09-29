@@ -8,22 +8,22 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 })
 export class DragDropComponent {
   todo = [
-    'Get to work',
-    'Pick up groceries',
-    'Go home',
-    'Fall asleep'
+    'Trabalhar',
+    'Fazer as compras',
+    'Iniciar a mentoria',
+    'Ir dormir'
   ];
 
   doing = [
-    'Studying Angular'
+    'Estudar Angular'
   ];
 
   done = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
+    'Levantar',
+    'Escovar os dentes',
+    'Tomar banho',
+    'Olhar emails',
+    'Andar com o cachorro'
   ];
 
   drop(event: CdkDragDrop<string[]>): void {
