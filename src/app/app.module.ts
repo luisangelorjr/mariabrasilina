@@ -33,6 +33,9 @@ import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HomeComponent } from './home/home.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { RandomComponentsComponent } from './random-components/random-components.component';
+import { MatBadgeModule } from '@angular/material/badge'; 
 
 @NgModule({
   declarations: [
@@ -47,7 +50,8 @@ import { HomeComponent } from './home/home.component';
     TableComponent,
     TreeComponent,
     DragDropComponent,
-    HomeComponent
+    HomeComponent,
+    RandomComponentsComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +74,9 @@ import { HomeComponent } from './home/home.component';
     MatPaginatorModule,
     MatSortModule,
     MatTreeModule,
-    DragDropModule
+    DragDropModule,
+    MatAutocompleteModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
