@@ -3,7 +3,13 @@
 }
 
 .about-img {
-    width: 20em;
+    width: 30em;
+    height: 40em;
     object-fit: cover;
-    object-position: -20% 0;
+    object-position: 0 40%;
 }
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
