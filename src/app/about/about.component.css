@@ -1,0 +1,5 @@
+.about-img {
+    width: 20em;
+    object-fit: cover;
+    object-position: -20% 0;
+}
