@@ -32,6 +32,7 @@ import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     DashboardComponent,
     TableComponent,
     TreeComponent,
-    DragDropComponent
+    DragDropComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
