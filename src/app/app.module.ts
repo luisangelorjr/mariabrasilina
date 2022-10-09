@@ -35,7 +35,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HomeComponent } from './home/home.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { RandomComponentsComponent } from './random-components/random-components.component';
-import { MatBadgeModule } from '@angular/material/badge'; 
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatTreeModule,
     DragDropModule,
     MatAutocompleteModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
