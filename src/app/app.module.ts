@@ -37,6 +37,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { RandomComponentsComponent } from './random-components/random-components.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BookCardComponent } from './book-card/book-card.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     TreeComponent,
     DragDropComponent,
     HomeComponent,
-    RandomComponentsComponent
+    RandomComponentsComponent,
+    BookCardComponent
   ],
   imports: [
     BrowserModule,
