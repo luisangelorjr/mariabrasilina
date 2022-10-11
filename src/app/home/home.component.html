@@ -1,14 +1,20 @@
 <h1>Oi!</h1>
 <p>Se vc chegou ate aqui e quer me ajudar com:</p>
-    <ol>
-        <li>Textos</li>
-        <li>Fotos</li>
-        <li>Alguma historia dela</li>
-        <li>Ou alguma ideia</li>
-    </ol>
-    <p>Por favor, me manda <a href="https://github.com/luisangelorjr/mariabrasilina/issues/new">nesse local aqui</a> que estou organizando tudo</p>
+<ol>
+    <li>Textos</li>
+    <li>Fotos</li>
+    <li>Alguma historia dela</li>
+    <li>Ou alguma ideia</li>
+</ol>
+<p>Por favor, me manda <a href="https://github.com/luisangelorjr/mariabrasilina/issues/new">nesse local aqui</a> que
+    estou organizando tudo</p>
 <p>@luisangelorjr</p>
 
 <hr>
 
-<app-book-card></app-book-card>
+<div class="container--book-card">
+    <div class="book-card" *ngFor="let bookExample of bookExamples">
+        <app-book-card [title]="bookExample.title" [author]="bookExample.author" [description]="bookExample.description"
+            [coverImage]="bookExample.coverImage"></app-book-card>
+    </div>
+</div>
