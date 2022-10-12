@@ -38,6 +38,9 @@ import { RandomComponentsComponent } from './random-components/random-components
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BookCardComponent } from './book-card/book-card.component';
+import { ApiService } from './core/services/api.service';
+import { BooksService } from './core/services/books.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -80,9 +83,10 @@ import { BookCardComponent } from './book-card/book-card.component';
     DragDropModule,
     MatAutocompleteModule,
     MatBadgeModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService,BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

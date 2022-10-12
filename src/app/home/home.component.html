@@ -13,8 +13,8 @@
 <hr>
 
 <div class="container--book-card">
-    <div class="book-card" *ngFor="let bookExample of bookExamples">
-        <app-book-card [title]="bookExample.title" [author]="bookExample.author" [description]="bookExample.description"
-            [coverImage]="bookExample.coverImage"></app-book-card>
+    <div class="book-card" *ngFor="let book of books">
+        <app-book-card [title]="book.title" [author]="book.author" [description]="book.description"
+            [coverImage]="book.coverImage"></app-book-card>
     </div>
 </div>

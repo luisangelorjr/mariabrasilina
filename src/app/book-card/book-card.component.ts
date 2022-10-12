@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { BooksService } from '../core/services/books.service';
 import { Book } from '../shared/interface/book.interface';
 
 @Component({
@@ -7,8 +9,10 @@ import { Book } from '../shared/interface/book.interface';
   styleUrls: ['./book-card.component.css']
 })
 export class BookCardComponent implements OnInit {
+  private subscription: Subscription = new Subscription;
 
   bookExample: Book = {
+    id: 1,
     author: "Autor Teste",
     title: "Sou um Titulo de Teste",
     description: "Descricao de teste",
@@ -27,9 +31,8 @@ export class BookCardComponent implements OnInit {
   @Input()
   coverImage: string = this.bookExample.coverImage;
 
-  constructor() { }
+  constructor(bookService: BooksService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
