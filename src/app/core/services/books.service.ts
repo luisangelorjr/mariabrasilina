@@ -13,6 +13,6 @@ export class BooksService {
 
   getAll(): Observable<Book[]> {
     return this.apiService.getAll('/books')
-      .pipe(map(data => data));
+      .pipe(map(data => data.books));
   }
 }
