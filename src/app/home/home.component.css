@@ -1,5 +1,8 @@
 .container--book-card {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
 }
 
