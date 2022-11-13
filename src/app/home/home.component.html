@@ -1,0 +1,6 @@
+<div class="container--book-card">
+    <div class="book-card" *ngFor="let book of books">
+        <app-book-card [title]="book.title" [author]="book.author" [description]="book.description"
+            [coverImage]="book.coverImage"></app-book-card>
+    </div>
+</div>

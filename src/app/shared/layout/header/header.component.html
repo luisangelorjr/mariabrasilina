@@ -1,9 +1,36 @@
-<header class="header">
-    <a href="/"><h1>Biblioteca Maria Brasilina</h1></a>
-    <div class="header-right">
-        <ol>
-            <li><a href="about">About</a></li>
-            <li><a href="playground">Playground</a></li>
-        </ol>
-    </div>
+<header>
+    <nav class="container">
+        <div>
+            <a href="/">
+                <h1>Biblioteca Maria Brasilina</h1>
+            </a>
+        </div>
+        <div class="container">
+            <div>
+                <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>O que voce procura?</mat-label>
+                        <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option.name}}
+                            </mat-option>
+                        </mat-autocomplete>
+
+                    </mat-form-field>
+                </form>
+            </div>
+            <div>
+                <button mat-icon-button (click)="openSnackBar()" color="primary" aria-label="Example icon-button with a heart icon">
+                    <mat-icon>search</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="">
+            <ol>
+                <li><a href="about">About</a></li>
+                <li><a href="playground">Playground</a></li>
+            </ol>
+        </div>
+    </nav>
 </header>

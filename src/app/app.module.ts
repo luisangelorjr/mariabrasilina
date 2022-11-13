@@ -32,6 +32,15 @@ import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HomeComponent } from './home/home.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { RandomComponentsComponent } from './random-components/random-components.component';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BookCardComponent } from './book-card/book-card.component';
+import { ApiService } from './core/services/api.service';
+import { BooksService } from './core/services/books.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +54,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     DashboardComponent,
     TableComponent,
     TreeComponent,
-    DragDropComponent
+    DragDropComponent,
+    HomeComponent,
+    RandomComponentsComponent,
+    BookCardComponent
   ],
   imports: [
     BrowserModule,
@@ -68,9 +80,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatPaginatorModule,
     MatSortModule,
     MatTreeModule,
-    DragDropModule
+    DragDropModule,
+    MatAutocompleteModule,
+    MatBadgeModule,
+    MatSnackBarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService,BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

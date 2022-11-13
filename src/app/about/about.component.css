@@ -1,0 +1,15 @@
+.container-flex {
+    display: flex;
+}
+
+.about-img {
+    width: 30em;
+    height: 40em;
+    object-fit: cover;
+    object-position: 0 40%;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
